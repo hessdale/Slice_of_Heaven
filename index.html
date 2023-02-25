@@ -15,30 +15,41 @@
 
 <body>
   <header>
-    <div class="logo">
-      <img src="/images/pizza_logo.svg" alt="pizza logo">
+    <input type="radio" name="menu" id="menu_open" class="menu_radio_button">
+    <input type="radio" name="menu" id="menu_close" class="menu_radio_button">
+    <div class="menu_icon">
+      <img src="/images/pizza_icon.svg" alt="pizza icon">
     </div>
-    <nav>
-      <img src="/images/menu.svg" alt="navigation icon">
-    </nav>
+    <label for="menu_open">
+      <nav>
+        <img src="/images/menu.svg" alt="navigation icon">
+      </nav>
+    </label>
+    <section id="mobile_menu">
+      <label for="menu_close">
+        <nav>
+          <img src="/images/cancel.svg" alt="exit navigation icon">
+        </nav>
+      </label>
+      <a href="/pages/About.html">About</a>
+      <a href="/pages/Menu.html">Menu</a>
+      <a href="/pages/Contact.html">Contact</a>
+    </section>
   </header>
   <main>
     <article id="menu">
-      <div>
-        <img src="/images/pizza_icon.png" alt="pizza icon">
+      <div id="logo">
+        <img src="/images/pizza_logo.png" alt="pizza logo">
       </div>
       <div>
         <h1>Slice of Heaven</h1>
         <p>Pizzaria & Bar</p>
       </div>
-      <a href="/pages/Menu.html" target="
-      _blank">
-
-        <img src="/images/open-menu.svg" alt="open menu icon">
-        menu</a>
+      <a href="/pages/Menu.html" target="_blank">
+        <img src="/images/open-menu.svg" alt="open menu icon">menu</a>
 
       </div>
-      <div>
+      <div id="menu_pizza">
         <img src="/images/pizza_1.avif" alt="pizza">
       </div>
     </article>
