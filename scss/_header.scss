@@ -1,0 +1,24 @@
+$blue_font_color: #445564;
+$white_font_color: #ffffff;
+$tan_back_color: #C3AF90;
+$blue_back_color: #445564;
+
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+
+    background-color: $blue_back_color;
+
+    .logo>img {
+        width: 60px;
+    }
+
+    nav {
+        justify-self: end;
+
+        img {
+            width: 60px;
+        }
+    }
+}
