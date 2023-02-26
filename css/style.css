@@ -3,6 +3,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   align-items: center;
   background-color: #445564;
+  min-height: 10vh;
 }
 header .menu_radio_button {
   display: none;
@@ -20,7 +21,7 @@ header #mobile_menu {
   background-color: #445564;
   color: #F6F4F2;
   visibility: hidden;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.2s;
   transform: scale(0);
 }
 header label {
@@ -46,12 +47,54 @@ nav img {
   width: 60px;
 }
 
+footer {
+  text-align: center;
+  background-color: #445564;
+  min-height: 15vh;
+}
+
+.blue_txt {
+  color: #445564;
+}
+
+.white_txt {
+  color: #ffffff;
+}
+
+.tan_txt {
+  color: #C3AF90;
+}
+
+.egg_txt {
+  color: #f0e3ce;
+}
+
+.background_color_blue {
+  background-color: #445564;
+}
+
+.background_color_white {
+  background-color: #ffffff;
+}
+
+.background_color_tan {
+  background-color: #C3AF90;
+}
+
+.background_color_off_white {
+  background-color: #f0e3ce;
+}
+
 * {
   font-family: monospace;
   margin: 0;
   padding: 0;
   letter-spacing: 1.2px;
   line-height: 25px;
+}
+
+img {
+  max-width: 100%;
 }
 
 #menu {
@@ -79,6 +122,34 @@ nav img {
 }
 #menu div p {
   color: #445564;
+}
+
+#about_menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  justify-items: center;
+  background-color: #445564;
+  text-align: center;
+}
+#about_menu #about_us {
+  grid-column: span 2;
+  color: #f0e3ce;
+  margin-top: 20px;
+}
+#about_menu div {
+  margin-top: 30px;
+}
+
+#info {
+  display: grid;
+  text-align: center;
+  margin-top: 30px;
+  grid-template-columns: 1fr;
+}
+#info > iframe {
+  width: 100%;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
     background-color: $blue_color;
+    min-height: 10vh;
 
     .menu_radio_button {
         display: none;
@@ -26,7 +27,7 @@ header {
         background-color: $blue_color;
         color: $off_white_color;
         visibility: hidden;
-        transition: all ease-in-out .5s;
+        transition: all ease-in-out .2s;
         transform: scale(0);
 
     }
@@ -36,7 +37,6 @@ header {
     }
 
     #mobile_menu>label {
-
         justify-self: end;
         align-self: start;
     }
