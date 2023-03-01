@@ -153,9 +153,11 @@ img {
   margin-top: 30px;
   grid-template-columns: 1fr;
 }
-#info > iframe {
+
+iframe {
   width: 100%;
   margin-top: 30px;
+  max-width: 700px;
 }
 
 #our_story {
@@ -178,14 +180,21 @@ img {
   margin-top: 40px;
 }
 #staff p {
-  visibility: hidden;
-  position: absolute;
-  transition: all ease-in-out 0.5s;
+  transform: scale(0);
+  transition: all ease-in-out 0.8s;
+  max-height: 0px;
 }
 #staff div:hover p {
-  visibility: visible;
   transform: scale(1);
-  position: relative;
+  max-height: 600px;
+}
+
+#contact {
+  display: grid;
+  text-align: center;
+}
+#contact a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
