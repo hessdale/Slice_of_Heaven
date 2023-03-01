@@ -97,6 +97,12 @@ img {
   max-width: 100%;
 }
 
+.nav {
+  font-size: 30px;
+  color: #f0e3ce;
+  text-decoration: none;
+}
+
 #menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -126,7 +132,7 @@ img {
 
 #about_menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
   justify-items: center;
   background-color: #445564;
@@ -150,6 +156,36 @@ img {
 #info > iframe {
   width: 100%;
   margin-top: 30px;
+}
+
+#our_story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+  margin-top: 20px;
+}
+#our_story #border_blue {
+  border: #445564 solid 10px;
+}
+
+#staff {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+  margin-top: 30px;
+}
+#staff h1 {
+  margin-top: 40px;
+}
+#staff p {
+  visibility: hidden;
+  position: absolute;
+  transition: all ease-in-out 0.5s;
+}
+#staff div:hover p {
+  visibility: visible;
+  transform: scale(1);
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
