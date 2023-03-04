@@ -103,12 +103,24 @@ img {
   text-decoration: none;
 }
 
+#nav_shrink {
+  width: 60px;
+  height: 60px;
+}
+
+#tan_back {
+  background-color: #C3AF90;
+}
+
 #menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
   justify-items: center;
   background-color: #C3AF90;
+}
+#menu #menu_pizza {
+  padding-bottom: 30px;
 }
 #menu #logo {
   grid-column: span 2;
@@ -130,8 +142,27 @@ img {
 #menu div h1 {
   margin-top: 25px;
 }
-#menu div p {
-  color: #394753;
+
+#icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#food_icon {
+  display: grid;
+  background-color: #394753;
+  align-items: center;
+  justify-items: center;
+  padding-top: 50px;
+}
+
+#about_us {
+  color: #f0e3ce;
+  background-color: #394753;
+  text-align: center;
+}
+#about_us h1 {
+  padding-top: 40px;
 }
 
 #about_menu {
@@ -156,12 +187,6 @@ img {
   grid-column: span 2;
   margin-bottom: 50px;
 }
-#about_menu #about_us {
-  grid-column: span 2;
-  color: #f0e3ce;
-  margin-top: 20px;
-  max-width: 90%;
-}
 #about_menu div {
   margin-top: 30px;
 }
@@ -173,6 +198,13 @@ img {
   grid-template-columns: 1fr;
 }
 
+#pizza_main_title {
+  background-color: #C3AF90;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 #pizza_info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -180,14 +212,27 @@ img {
   background-color: #C3AF90;
   justify-items: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 #pizza_info p {
   color: #394753;
 }
 
+#pizza_desc {
+  display: grid;
+  justify-items: center;
+  background-color: #C3AF90;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#pizza_desc p {
+  max-width: 80%;
+}
+
 iframe {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 700px;
 }
 
@@ -265,6 +310,7 @@ iframe {
   }
   #about_menu {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-bottom: 300px;
   }
   #cocktail_1 {
     margin-right: 30px;
@@ -272,7 +318,7 @@ iframe {
   }
   #cocktail_2 {
     margin-right: 8%;
-    padding-top: 580px;
+    padding-top: 450px;
     justify-self: end;
     position: absolute;
   }
@@ -281,31 +327,33 @@ iframe {
     max-height: 100px;
     width: 30%;
     padding-top: 770px;
-    padding-right: 200px;
+    padding-right: 20rem;
+  }
+  #pizza_info {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  #pizza_info img {
+    max-width: 370px;
+  }
+  #cocktail_menu {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
-#pizza_info {
-  justify-items: center;
-  align-items: center;
-}
-#pizza_info img {
-  width: 270px;
-}
-#pizza_info p {
-  max-width: 80%;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  grid-column: span 2;
-}
-
-#cocktail_menu {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
 @media only screen and (min-width: 1000px) {
+  #abou_menu {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  }
+  #pizza_oven {
+    position: absolute;
+  }
   #pizza_menu {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+  #dough_1 img {
+    justify-items: end;
   }
   #desktop_pizza {
     display: none;
