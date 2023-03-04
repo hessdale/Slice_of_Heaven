@@ -95,7 +95,6 @@ footer {
 
 img {
   max-width: 100%;
-  object-fit: contain;
 }
 
 .nav {
@@ -194,10 +193,12 @@ iframe {
 
 #menu_page {
   background-color: #C3AF90;
+  display: grid;
 }
 #menu_page #pizza_menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
+  text-align: center;
   align-items: center;
 }
 #menu_page #pizza_menu img {
@@ -209,6 +210,7 @@ iframe {
 #menu_page #cocktail_menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
 }
 #menu_page #cocktail_menu h1 {
   padding-top: 40px;
@@ -254,7 +256,7 @@ iframe {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 500px) {
   #menu {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
@@ -298,6 +300,43 @@ iframe {
 
 #cocktail_menu {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media only screen and (min-width: 1000px) {
+  #pizza_menu {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  #desktop_pizza {
+    display: none;
+  }
+  #marg_pizza {
+    display: grid;
+    background-image: url(/images/pizza_7.png);
+    background-size: cover;
+    height: 40vh;
+    text-align: end;
+    padding-left: 70%;
+  }
+  #supreme_pizza {
+    display: grid;
+    background-image: url(/images/pizza_8.png);
+    background-size: cover;
+    height: 40vh;
+    text-align: start;
+    padding-right: 70%;
+  }
+  #mush_pizza {
+    display: grid;
+    background-image: url(/images/pizza_9.png);
+    background-size: cover;
+    height: 40vh;
+    text-align: end;
+    padding-left: 70%;
+  }
+  #cocktail_menu img {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
