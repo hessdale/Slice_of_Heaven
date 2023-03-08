@@ -47,6 +47,11 @@ img {
   object-fit: cover;
 }
 
+.grid_center {
+  display: grid;
+  justify-items: center;
+}
+
 header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

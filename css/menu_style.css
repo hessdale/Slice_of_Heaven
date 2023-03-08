@@ -47,6 +47,11 @@ img {
   object-fit: cover;
 }
 
+.grid_center {
+  display: grid;
+  justify-items: center;
+}
+
 header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -177,20 +182,20 @@ footer {
     text-align: end;
     padding-left: 70%;
   }
-  #cocktail_menu #cocktail_desktop {
+  #cocktail_menu .cocktail_desktop {
     display: grid;
     color: red;
     max-width: 70%;
   }
-  #cocktail_menu #cocktail_hover :hover h1,
-  #cocktail_menu #cocktail_hover :hover p {
+  #cocktail_menu .cocktail_hover {
+    justify-items: center;
+  }
+  #cocktail_menu .cocktail_hover :hover h1,
+  #cocktail_menu .cocktail_hover :hover p {
     transition: all ease-in-out 0.8s;
   }
-  #cocktail_menu #cocktail_regular {
+  #cocktail_menu .cocktail_regular {
     display: none;
-  }
-  #cocktail_menu img {
-    max-width: 80%;
   }
 }
 

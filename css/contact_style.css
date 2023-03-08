@@ -47,6 +47,11 @@ img {
   object-fit: cover;
 }
 
+.grid_center {
+  display: grid;
+  justify-items: center;
+}
+
 header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -123,6 +128,18 @@ footer {
 
 #order {
   text-align: center;
+}
+
+#map {
+  display: grid;
+}
+#map iframe {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 700px;
 }
 
 /*# sourceMappingURL=contact_style.css.map */

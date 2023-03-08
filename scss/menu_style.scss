@@ -86,14 +86,14 @@ $egg_color: #f0e3ce;
 
     #cocktail_menu {
 
-        #cocktail_desktop {
+        .cocktail_desktop {
             display: grid;
             color: red;
             max-width: 70%;
         }
 
-        #cocktail_hover {
-
+        .cocktail_hover {
+            justify-items: center;
 
             :hover {
 
@@ -104,12 +104,10 @@ $egg_color: #f0e3ce;
             }
         }
 
-        #cocktail_regular {
+        .cocktail_regular {
             display: none;
         }
 
-        img {
-            max-width: 80%;
-        }
+
     }
 }
