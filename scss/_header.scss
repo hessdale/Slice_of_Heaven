@@ -1,7 +1,10 @@
+@use "general";
+
 $blue_color: #445564;
 $white_color: #ffffff;
 $tan_color: #C3AF90;
 $off_white_color: #F6F4F2;
+$egg_color: #f0e3ce;
 
 header {
     display: grid;
@@ -62,4 +65,15 @@ nav {
     img {
         width: 60px;
     }
+}
+
+.nav {
+    font-size: 30px;
+    color: $egg_color;
+    text-decoration: none;
+}
+
+#nav_shrink {
+    width: 60px;
+    height: 60px;
 }

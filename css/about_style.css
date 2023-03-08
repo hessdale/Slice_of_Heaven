@@ -1,0 +1,145 @@
+.blue_txt {
+  color: #394753;
+}
+
+.white_txt {
+  color: #ffffff;
+}
+
+.tan_txt {
+  color: #C3AF90;
+}
+
+.egg_txt {
+  color: #f0e3ce;
+}
+
+.background_color_blue {
+  background-color: #394753;
+}
+
+.background_color_white {
+  background-color: #ffffff;
+}
+
+.background_color_tan {
+  background-color: #C3AF90;
+}
+
+.background_color_off_white {
+  background-color: #f0e3ce;
+}
+
+#tan_back {
+  background-color: #C3AF90;
+}
+
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.2px;
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  background-color: #445564;
+  min-height: 10vh;
+}
+header .menu_radio_button {
+  display: none;
+}
+header #mobile_menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  width: 100%;
+  height: 100%;
+  background-color: #445564;
+  color: #F6F4F2;
+  visibility: hidden;
+  transition: all ease-in-out 0.2s;
+  transform: scale(0);
+}
+header label {
+  display: grid;
+}
+header #mobile_menu > label {
+  justify-self: end;
+  align-self: start;
+}
+header #menu_open:checked ~ #mobile_menu {
+  visibility: visible;
+  transform: scale(1);
+  z-index: 10;
+}
+header .menu_icon > img {
+  width: 60px;
+}
+
+nav {
+  justify-self: end;
+}
+nav img {
+  width: 60px;
+}
+
+.nav {
+  font-size: 30px;
+  color: #f0e3ce;
+  text-decoration: none;
+}
+
+#nav_shrink {
+  width: 60px;
+  height: 60px;
+}
+
+footer {
+  text-align: center;
+  background-color: #445564;
+  min-height: 15vh;
+}
+
+#our_story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  text-align: center;
+  margin-top: 20px;
+}
+#our_story #border_blue {
+  border: #394753 solid 10px;
+}
+
+#staff {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  text-align: center;
+  margin-top: 30px;
+}
+#staff h1 {
+  margin-top: 40px;
+}
+#staff p {
+  transform: scale(0);
+  transition: all ease-in-out 0.8s;
+  max-height: 0px;
+}
+#staff div:hover p {
+  transform: scale(1);
+  max-height: 600px;
+}
+
+/*# sourceMappingURL=about_style.css.map */
