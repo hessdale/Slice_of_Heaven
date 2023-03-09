@@ -183,19 +183,13 @@ footer {
     padding-left: 70%;
   }
   #cocktail_menu .cocktail_desktop {
-    display: grid;
-    color: red;
-    max-width: 70%;
+    color: #C3AF90;
+    max-width: 375px;
+    order: -1;
   }
-  #cocktail_menu .cocktail_hover {
-    justify-items: center;
-  }
-  #cocktail_menu .cocktail_hover :hover h1,
-  #cocktail_menu .cocktail_hover :hover p {
+  #cocktail_menu .cocktail_hover:hover .cocktail_desktop {
+    transform: translateY(160px);
     transition: all ease-in-out 0.8s;
-  }
-  #cocktail_menu .cocktail_regular {
-    display: none;
   }
 }
 

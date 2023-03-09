@@ -47,6 +47,8 @@ $egg_color: #f0e3ce;
     }
 }
 
+
+
 @media only screen and (min-width:1000px) {
     #pizza_menu {
         margin-top: 60px;
@@ -85,29 +87,19 @@ $egg_color: #f0e3ce;
     }
 
     #cocktail_menu {
-
         .cocktail_desktop {
-            display: grid;
-            color: red;
-            max-width: 70%;
+            color: $tan_color;
+            max-width: 375px;
+            order: -1;
         }
 
-        .cocktail_hover {
-            justify-items: center;
+        .cocktail_hover:hover {
 
-            :hover {
-
-                h1,
-                p {
-                    transition: all ease-in-out .8s;
-                }
+            .cocktail_desktop {
+                transform: translateY(160px);
+                transition: all ease-in-out .8s;
             }
         }
-
-        .cocktail_regular {
-            display: none;
-        }
-
-
     }
+
 }
