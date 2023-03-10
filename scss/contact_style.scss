@@ -7,17 +7,23 @@ $white_color: #ffffff;
 $tan_color: #C3AF90;
 $egg_color: #f0e3ce;
 
+main {
+    background-color: $tan_color;
+    display: grid;
+    min-height: 80vh;
+}
+
+#contact_main {}
+
 #contact {
     display: grid;
     text-align: center;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
 
     a {
         text-decoration: none;
     }
-}
-
-#order {
-    text-align: center;
 }
 
 #map {
@@ -26,9 +32,28 @@ $egg_color: #f0e3ce;
     iframe {
         justify-self: center;
         align-self: center;
-        width: 100%;
         margin-top: 50px;
         margin-bottom: 50px;
-        max-width: 700px;
+        max-width: 100%;
+    }
+}
+
+#order {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    max-width: 90%;
+}
+
+#hours {
+    text-align: center;
+    display: grid;
+}
+
+@media only screen and (min-width:1200px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }

@@ -115,19 +115,23 @@ nav img {
 footer {
   text-align: center;
   background-color: #445564;
-  min-height: 15vh;
+  min-height: 10vh;
+}
+
+main {
+  background-color: #C3AF90;
+  display: grid;
+  min-height: 80vh;
 }
 
 #contact {
   display: grid;
   text-align: center;
+  grid-template-columns: 1fr;
+  padding-top: 30px;
 }
 #contact a {
   text-decoration: none;
-}
-
-#order {
-  text-align: center;
 }
 
 #map {
@@ -136,10 +140,29 @@ footer {
 #map iframe {
   justify-self: center;
   align-self: center;
-  width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
-  max-width: 700px;
+  max-width: 100%;
+}
+
+#order {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  max-width: 90%;
+}
+
+#hours {
+  text-align: center;
+  display: grid;
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 /*# sourceMappingURL=contact_style.css.map */
