@@ -20,7 +20,7 @@ $egg_color: #f0e3ce;
         grid-template-columns: 1fr;
         text-align: center;
         align-items: center;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
 
         img {
             margin-top: 60px;
@@ -30,6 +30,10 @@ $egg_color: #f0e3ce;
             padding-top: 40px;
         }
 
+    }
+
+    #weekly_pie {
+        padding-bottom: 100px;
     }
 
     #cocktail_menu {
@@ -48,6 +52,19 @@ $egg_color: #f0e3ce;
 }
 
 
+
+#cocktail_list {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    h1 {
+        padding-top: 50px;
+    }
+
+    h3 {
+        padding-top: 30px;
+    }
+}
 
 @media only screen and (min-width:1000px) {
     #pizza_menu {
@@ -86,11 +103,20 @@ $egg_color: #f0e3ce;
         padding-left: 70%;
     }
 
+    #specials_title {
+        transform: translateY(125px);
+    }
+
     #cocktail_menu {
         .cocktail_desktop {
             color: $tan_color;
             max-width: 375px;
             order: -1;
+            max-height: 190px;
+        }
+
+        .cocktail_hover {
+            grid-template-rows: 190px;
         }
 
         .cocktail_hover:hover {

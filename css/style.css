@@ -228,28 +228,26 @@ img {
 
 #about_menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   justify-items: center;
   background-color: #394753;
   text-align: center;
-}
-#about_menu #cocktail_1,
-#about_menu #cocktail_2 {
-  grid-column: span 2;
 }
 #about_menu #cocktail_1 > img,
 #about_menu #cocktail_2 > img {
   text-align: center;
   max-width: 270px;
 }
-#about_menu #cocktail_info {
-  color: #f0e3ce;
-  grid-column: span 2;
-  margin-bottom: 50px;
-}
 #about_menu div {
   margin-top: 30px;
+}
+
+#cocktail_info {
+  text-align: center;
+  color: #f0e3ce;
+  padding-bottom: 50px;
+  background-color: #394753;
 }
 
 #info {
@@ -315,26 +313,15 @@ img {
   #menu #menu_pizza {
     grid-column: span 2;
   }
-  #about_menu {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding-bottom: 300px;
-  }
   #cocktail_1 {
-    margin-right: 30px;
-    margin-bottom: 350px;
+    transform: translateX(100px);
   }
   #cocktail_2 {
-    margin-right: 8%;
-    padding-top: 450px;
-    justify-self: end;
-    position: absolute;
+    transform: translateY(150px);
   }
   #cocktail_info {
-    position: absolute;
-    max-height: 100px;
-    width: 30%;
-    padding-top: 770px;
-    padding-right: 20rem;
+    width: 40%;
+    transform: translate(100px, 100px);
   }
   #pizza_info {
     justify-items: center;
@@ -349,9 +336,6 @@ img {
   }
 }
 @media only screen and (min-width: 1000px) {
-  #about_menu {
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-  }
   #pizza_1 {
     justify-self: start;
   }
@@ -366,17 +350,6 @@ img {
   }
 }
 @media only screen and (min-width: 1100px) {
-  #cocktail_1 {
-    margin-right: 30px;
-    margin-bottom: 250px;
-  }
-  #cocktail_2 {
-    margin-right: 20%;
-    padding-top: 400px;
-  }
-  #cocktail_info {
-    padding-top: 600px;
-  }
   #pizza_1 {
     justify-self: center;
   }
