@@ -15,6 +15,10 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 
+    h1 {
+        font-size: 30px;
+    }
+
     a {
         text-decoration: none;
         color: black;
@@ -39,7 +43,7 @@ main {
     align-items: center;
     text-align: center;
     padding-top: 80px;
-    background-color: $blue_color;
+    background-color: $tan_color;
     padding-bottom: 80px;
 }
 
@@ -72,12 +76,11 @@ footer {
         padding-top: 200px;
 
         h1 {
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
     #what {
-
         text-align: center;
         padding-top: 80px;
     }

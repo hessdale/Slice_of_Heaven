@@ -239,6 +239,9 @@ main {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+#contact h1 {
+  font-size: 30px;
+}
 #contact a {
   text-decoration: none;
   color: black;
@@ -261,7 +264,7 @@ main {
   align-items: center;
   text-align: center;
   padding-top: 80px;
-  background-color: #394753;
+  background-color: #C3AF90;
   padding-bottom: 80px;
 }
 
@@ -292,7 +295,7 @@ footer {
     padding-top: 200px;
   }
   #contact h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   #what {
     text-align: center;
