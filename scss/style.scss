@@ -1,48 +1,7 @@
 @use "header";
 @use "footer";
-@use "general";
+@import "general";
 
-//vTRY TO REMOVEv//
-$blue_color: #394753;
-$white_color: #ffffff;
-$tan_color: #C3AF90;
-$egg_color: #f0e3ce;
-
-.blue_txt {
-    color: $blue_color;
-}
-
-.white_txt {
-    color: $white_color;
-}
-
-.tan_txt {
-    color: $tan_color;
-}
-
-.egg_txt {
-    color: $egg_color;
-}
-
-.background_color_blue {
-    background-color: $blue_color;
-}
-
-.background_color_white {
-    background-color: $white_color;
-}
-
-.background_color_tan {
-    background-color: $tan_color;
-}
-
-.background_color_off_white {
-    background-color: $egg_color;
-}
-
-#tan_back {
-    background-color: $tan_color;
-}
 
 * {
     font-family: monospace;

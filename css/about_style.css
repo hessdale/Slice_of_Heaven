@@ -56,7 +56,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   align-items: center;
-  background-color: #445564;
+  background-color: #394753;
   min-height: 10vh;
 }
 header .menu_radio_button {
@@ -72,7 +72,7 @@ header #mobile_menu {
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
   width: 100%;
   height: 100%;
-  background-color: #445564;
+  background-color: #394753;
   color: #F6F4F2;
   visibility: hidden;
   transition: all ease-in-out 0.2s;
@@ -112,10 +112,118 @@ nav img {
   height: 60px;
 }
 
+.blue_txt {
+  color: #394753;
+}
+
+.white_txt {
+  color: #ffffff;
+}
+
+.tan_txt {
+  color: #C3AF90;
+}
+
+.egg_txt {
+  color: #f0e3ce;
+}
+
+.background_color_blue {
+  background-color: #394753;
+}
+
+.background_color_white {
+  background-color: #ffffff;
+}
+
+.background_color_tan {
+  background-color: #C3AF90;
+}
+
+.background_color_off_white {
+  background-color: #f0e3ce;
+}
+
+#tan_back {
+  background-color: #C3AF90;
+}
+
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.2px;
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.grid_center {
+  display: grid;
+  justify-items: center;
+}
+
 footer {
   text-align: center;
-  background-color: #445564;
+  background-color: #394753;
   min-height: 10vh;
+}
+
+.blue_txt {
+  color: #394753;
+}
+
+.white_txt {
+  color: #ffffff;
+}
+
+.tan_txt {
+  color: #C3AF90;
+}
+
+.egg_txt {
+  color: #f0e3ce;
+}
+
+.background_color_blue {
+  background-color: #394753;
+}
+
+.background_color_white {
+  background-color: #ffffff;
+}
+
+.background_color_tan {
+  background-color: #C3AF90;
+}
+
+.background_color_off_white {
+  background-color: #f0e3ce;
+}
+
+#tan_back {
+  background-color: #C3AF90;
+}
+
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.2px;
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.grid_center {
+  display: grid;
+  justify-items: center;
 }
 
 main {
@@ -128,6 +236,9 @@ main {
   text-align: center;
   padding-top: 20px;
   align-items: center;
+}
+#our_story #logo img {
+  width: 85px;
 }
 #our_story #border_blue {
   border: #394753 solid 10px;
