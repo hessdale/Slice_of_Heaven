@@ -293,6 +293,9 @@ iframe {
     transform: scale(1);
     max-height: 600px;
   }
+  .youtube_video {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=about_style.css.map */

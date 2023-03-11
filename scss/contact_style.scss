@@ -2,14 +2,11 @@
 @use "footer";
 @import "general";
 
-
 main {
     background-color: $tan_color;
     display: grid;
     min-height: 80vh;
 }
-
-
 
 #contact {
     display: grid;

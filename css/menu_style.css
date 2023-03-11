@@ -249,6 +249,12 @@ img {
 #menu_page #weekly_pie {
   padding-bottom: 100px;
 }
+#menu_page #weekly_pie h2 {
+  padding-top: 20px;
+}
+#menu_page #weekly_pie h3 {
+  padding-bottom: 20px;
+}
 #menu_page #cocktail_menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -303,6 +309,9 @@ img {
     height: 40vh;
     text-align: end;
     padding-left: 70%;
+  }
+  #weekly_pie p {
+    width: 70%;
   }
   #specials_title {
     transform: translateY(125px);

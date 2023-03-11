@@ -226,19 +226,6 @@ img {
   justify-items: center;
 }
 
-* {
-  font-family: monospace;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1.2px;
-  line-height: 25px;
-}
-
-img {
-  max-width: 100%;
-  object-fit: cover;
-}
-
 #menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -342,7 +329,7 @@ img {
 
 #pizza_info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   text-align: center;
   background-color: #C3AF90;
   justify-items: center;
@@ -407,6 +394,8 @@ img {
     margin-top: -350px;
     padding-top: 80px;
   }
+}
+@media only screen and (min-width: 700px) {
   #pizza_info {
     justify-items: center;
     align-items: center;

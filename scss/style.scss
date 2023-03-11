@@ -2,22 +2,6 @@
 @use "footer";
 @import "general";
 
-
-* {
-    font-family: monospace;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1.2px;
-    line-height: 25px;
-}
-
-img {
-    max-width: 100%;
-    object-fit: cover;
-}
-
-//^TRY TO REMOVE^//
-
 #menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -138,7 +122,7 @@ img {
 
 #pizza_info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     text-align: center;
     background-color: $tan_color;
     justify-items: center;
@@ -177,8 +161,6 @@ img {
     }
 }
 
-
-
 @media only screen and (min-width:600px) {
 
     #menu {
@@ -216,6 +198,9 @@ img {
         padding-top: 80px;
     }
 
+}
+
+@media only screen and (min-width:700px) {
     #pizza_info {
 
         justify-items: center;
@@ -230,13 +215,7 @@ img {
             position: absolute;
         }
     }
-
-
-
 }
-
-
-
 
 @media only screen and (min-width:1000px) {
 
@@ -271,8 +250,6 @@ img {
 
 }
 
-
-
 @media only screen and (min-width:1100px) {
 
     #pizza_1 {
@@ -296,8 +273,6 @@ img {
     #cocktail_1 {
         transform: translateX(300px);
     }
-
-
 
     #cocktail_info {
         transform: translate(75px, -600px);
