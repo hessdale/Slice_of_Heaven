@@ -12,10 +12,12 @@ main {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
-    padding-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     a {
         text-decoration: none;
+        color: black;
     }
 }
 
@@ -37,14 +39,13 @@ main {
     align-items: center;
     text-align: center;
     padding-top: 80px;
-    background-color: white;
+    background-color: $blue_color;
     padding-bottom: 80px;
 }
 
 #hours {
     text-align: center;
     display: grid;
-
     max-height: 600px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -67,7 +68,7 @@ footer {
     }
 
     #contact {
-        min-height: 350px;
+        height: 350px;
         padding-top: 200px;
 
         h1 {
@@ -76,7 +77,7 @@ footer {
     }
 
     #what {
-        background-color: white;
+
         text-align: center;
         padding-top: 80px;
     }
@@ -89,6 +90,5 @@ footer {
 
     #hours {
         background-color: white;
-
     }
 }

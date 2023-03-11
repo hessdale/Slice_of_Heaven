@@ -236,10 +236,12 @@ main {
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
-  padding-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 #contact a {
   text-decoration: none;
+  color: black;
 }
 
 #map {
@@ -259,7 +261,7 @@ main {
   align-items: center;
   text-align: center;
   padding-top: 80px;
-  background-color: white;
+  background-color: #394753;
   padding-bottom: 80px;
 }
 
@@ -286,14 +288,13 @@ footer {
     width: 100%;
   }
   #contact {
-    min-height: 350px;
+    height: 350px;
     padding-top: 200px;
   }
   #contact h1 {
     font-size: 30px;
   }
   #what {
-    background-color: white;
     text-align: center;
     padding-top: 80px;
   }
