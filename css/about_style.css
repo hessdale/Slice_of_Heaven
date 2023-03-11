@@ -54,8 +54,9 @@ img {
 
 header {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-items: center;
   background-color: #394753;
   min-height: 10vh;
 }
@@ -82,8 +83,8 @@ header label {
   display: grid;
 }
 header #mobile_menu > label {
-  justify-self: end;
-  align-self: start;
+  justify-self: center;
+  align-items: center;
 }
 header #menu_open:checked ~ #mobile_menu {
   visibility: visible;
@@ -94,9 +95,6 @@ header .menu_icon > img {
   width: 60px;
 }
 
-nav {
-  justify-self: end;
-}
 nav img {
   width: 60px;
 }
@@ -110,6 +108,14 @@ nav img {
 #nav_shrink {
   width: 60px;
   height: 60px;
+}
+
+.close_move {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
 
 .blue_txt {

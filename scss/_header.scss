@@ -2,8 +2,9 @@
 
 header {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-items: center;
     background-color: $blue_color;
     min-height: 10vh;
 
@@ -26,7 +27,6 @@ header {
         visibility: hidden;
         transition: all ease-in-out .2s;
         transform: scale(0);
-
     }
 
     label {
@@ -34,8 +34,8 @@ header {
     }
 
     #mobile_menu>label {
-        justify-self: end;
-        align-self: start;
+        justify-self: center;
+        align-items: center;
     }
 
     #menu_open:checked~#mobile_menu {
@@ -52,8 +52,6 @@ header {
 
 nav {
 
-    justify-self: end;
-
     img {
         width: 60px;
     }
@@ -68,4 +66,13 @@ nav {
 #nav_shrink {
     width: 60px;
     height: 60px;
+
+}
+
+.close_move {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
 }
