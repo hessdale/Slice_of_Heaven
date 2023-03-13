@@ -176,6 +176,7 @@ footer {
   text-align: center;
   background-color: #394753;
   min-height: 10vh;
+  padding-top: 20px;
 }
 
 .blue_txt {
@@ -284,10 +285,25 @@ img {
   padding-top: 30px;
 }
 
+#cocktail_jump {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+#cocktail_jump h1,
+#cocktail_jump p {
+  width: 80%;
+}
+
+#specials_title {
+  padding-top: 30px;
+}
+
 @media only screen and (min-width: 1000px) {
   #pizza_menu {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   #desktop_pizza {
     display: none;
@@ -300,6 +316,12 @@ img {
     text-align: end;
     padding-left: 70%;
   }
+  #marg_pizza h1,
+  #marg_pizza p {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
   #supreme_pizza {
     display: grid;
     background-image: url(/images/pizza_8.jpg);
@@ -308,6 +330,12 @@ img {
     text-align: start;
     padding-right: 70%;
   }
+  #supreme_pizza h1,
+  #supreme_pizza p {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
   #mush_pizza {
     display: grid;
     background-image: url(/images/pizza_9.jpg);
@@ -315,6 +343,12 @@ img {
     height: 40vh;
     text-align: end;
     padding-left: 70%;
+  }
+  #mush_pizza h1,
+  #mush_pizza p {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
   #weekly_pie p {
     width: 70%;

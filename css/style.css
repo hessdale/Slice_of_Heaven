@@ -176,6 +176,7 @@ footer {
   text-align: center;
   background-color: #394753;
   min-height: 10vh;
+  padding-top: 20px;
 }
 
 .blue_txt {
@@ -266,6 +267,7 @@ img {
 #icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  background-color: #394753;
 }
 
 #food_icon {
@@ -448,6 +450,19 @@ img {
   }
   #dough_1 img {
     max-width: 450px;
+  }
+  #about_us h1,
+  #about_us p,
+  #about_us a {
+    width: 60%;
+  }
+  #pizza_main_title {
+    display: grid;
+    justify-items: center;
+  }
+  #pizza_main_title h1,
+  #pizza_main_title p {
+    width: 60%;
   }
 }
 @media only screen and (min-width: 1400px) {

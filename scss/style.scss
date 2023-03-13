@@ -44,7 +44,7 @@
 #icons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
+    background-color: $blue_color;
 }
 
 #food_icon {
@@ -267,6 +267,26 @@
             max-width: 450px;
         }
     }
+
+    #about_us {
+
+        h1,
+        p,
+        a {
+            width: 60%;
+        }
+    }
+
+    #pizza_main_title {
+        display: grid;
+        justify-items: center;
+
+        h1,
+        p {
+            width: 60%;
+        }
+    }
+
 }
 
 @media only screen and (min-width:1400px) {

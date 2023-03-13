@@ -53,8 +53,6 @@
     }
 }
 
-
-
 #cocktail_list {
     padding-left: 20%;
     padding-right: 20%;
@@ -68,10 +66,26 @@
     }
 }
 
+#cocktail_jump {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 20px;
+
+    h1,
+    p {
+        width: 80%;
+    }
+}
+
+#specials_title {
+    padding-top: 30px;
+}
+
 @media only screen and (min-width:1000px) {
     #pizza_menu {
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
     #desktop_pizza {
@@ -85,6 +99,13 @@
         height: 40vh;
         text-align: end;
         padding-left: 70%;
+
+        h1,
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
     }
 
     #supreme_pizza {
@@ -94,6 +115,13 @@
         height: 40vh;
         text-align: start;
         padding-right: 70%;
+
+        h1,
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
     }
 
     #mush_pizza {
@@ -103,6 +131,13 @@
         height: 40vh;
         text-align: end;
         padding-left: 70%;
+
+        h1,
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
     }
 
     #weekly_pie {
@@ -114,6 +149,7 @@
 
     #specials_title {
         transform: translateY(125px);
+
     }
 
     #cocktail_menu {

@@ -59,6 +59,20 @@ footer {
     padding-top: 25px;
 }
 
+button {
+    background-color: $blue_color;
+    color: $tan_color;
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out .1s;
+}
+
 @media only screen and (min-width:1200px) {
     #contact_info {
         display: grid;
